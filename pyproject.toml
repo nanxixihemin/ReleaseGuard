@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "releaseguard"
+version = "0.2.0"
+description = "A local-first release audit skill for AI coding agents."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "ReleaseGuard Contributors" }]
+dependencies = [
+    "pydantic>=2.0,<3.0",
+    "typer>=0.9,<1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+
+[project.scripts]
+releaseguard = "releaseguard.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["releaseguard*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"

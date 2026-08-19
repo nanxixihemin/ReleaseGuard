@@ -1,0 +1,10 @@
+# Demonstration fixtures are intentionally unsafe and should not affect audits
+# of the ReleaseGuard source repository itself. Auditing each fixture directly
+# still evaluates it normally.
+examples/
+demos/
+
+# Local development tooling and per-project Phase 4 runtime evidence are not
+# part of the ReleaseGuard source audit or its public release package.
+.codeartsdoer/
+.releaseguard/

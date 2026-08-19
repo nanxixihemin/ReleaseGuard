@@ -1,0 +1,14 @@
+{
+  "display_name": "ReleaseGuard 本地AI发布安全审计",
+  "display_description": "面向 AI Coding Agent 的 OpenVINO 本地发布安全审计与人工 Release Gate",
+  "detail_describe": "ReleaseGuard 在本机执行确定性发布审计，并使用本地 OpenVINO 进行脱敏语义复核。AI Coding Agent 的安全处置受确定性策略与人工授权边界约束，源码不会离开设备，AI 无法覆盖确定性 Release Gate。",
+  "name": "releaseguard",
+  "icon": "https://raw.githubusercontent.com/openvinotoolkit/openvino/master/docs/assets/logo.png",
+  "use_cases": [
+    "检查这个项目能不能上线",
+    "发布前审计 secret、config、debug 与部署风险",
+    "对 release readiness 进行本地 OpenVINO 语义复核"
+  ],
+  "author": "ReleaseGuard Contributors",
+  "version": "0.2.0"
+}

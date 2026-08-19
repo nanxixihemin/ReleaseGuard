@@ -1,0 +1,5 @@
+pydantic>=2.0,<3.0
+typer>=0.9,<1.0
+openvino==2026.3.0
+openvino-genai==2026.3.0.0
+huggingface-hub>=0.23,<2.0
